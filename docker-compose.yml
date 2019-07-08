@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+
+  tickets-api:
+    container_name: tickets-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8080'
+    environment:
+      ENV: 8080
+      DB_NAME: tickets
+      DB_USER: example
+      DB_PASS: example
+    depends_on:
+      - db
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: tickets
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example

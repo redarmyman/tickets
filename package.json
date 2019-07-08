@@ -1,0 +1,29 @@
+{
+  "name": "Ticket",
+  "version": "1.0.0",
+  "description": "Tickets platform",
+  "author": "First Last <p.redkowiak@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/node": "latest",
+    "jest": "latest",
+    "@types/jest": "latest",
+    "ts-jest": "latest",
+    "express": "^4.16.1",
+    "cors": "latest",
+    "typescript": "latest",
+    "supertest": "latest",
+    "typeorm": "latest",
+    "reflect-metadata": "latest",
+    "pg": "latest",
+    "body-parser": "latest",
+    "uuid": "latest"
+  },
+  "devDependecies": {
+    "@types/express": "latest"
+  }
+}
