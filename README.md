@@ -4,6 +4,14 @@ Run:
 ```
 docker-compose up -d --build
 ```
+then login to container:
+```
+docker-compose exec tickets-api /bin/bash
+```
+and then run migrations to have schema and some initial data:
+```
+./node_modules/.bin/typeorm migration:run
+```
 
 Aplication will be available at:
 ```
